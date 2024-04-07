@@ -32,8 +32,8 @@ jobs:
 
       - name: Build and push
         run: |
-          docker build -t nkwocha1234/flask-app:latest .
-          docker push nkwocha1234/flask-app:latest
+          docker build -t nkwocha1234/flask-app-1:latest .
+          docker push nkwocha1234/flask-app-1:latest
 
     env:
       DOCKER_ACCESS_TOKEN: ${{ secrets.DOCKER_ACCESS_TOKEN }}
