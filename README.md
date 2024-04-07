@@ -1,4 +1,4 @@
-# flask-app-1
+
 ## Automatic Docker Image Build and Push with GitHub Actions
 
 This repository contains a simple Flask application that is containerized using Docker. The Docker image is automatically built and pushed to Docker Hub using GitHub Actions. Additionally, a scheduled workflow is set up to trigger a build every Saturday at 7 PM.
