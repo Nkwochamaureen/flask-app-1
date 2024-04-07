@@ -1,6 +1,9 @@
 name: Docker Build and Push
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 19 * * 6' # Every Saturday at 7 PM
 
@@ -25,7 +28,8 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: nkwocha1234/flask-app:latest
+          tags: yourdockerhubusername/flask-app:latest
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
